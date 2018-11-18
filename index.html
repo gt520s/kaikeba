@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    这是首页!
+    <form action="/api/user2">
+        <input type="text">
+        <input type="text">
+        
+    </form>
+</h1>
+<script>
+    fetch('/api/user').then((res)=>{
+        console.log(res);
+        return res.json()
+    }).then((user)=>{
+        console.log(user)
+    })
+</script>
+</body>
+</html>
